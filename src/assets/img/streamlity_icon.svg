@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <title>Streamlity</title>
+  <rect x="0.3" y="0.3" width="99.4" height="99.4" rx="22.2" fill="#0C0C0D" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="0.6"/>
+  <g transform="translate(7 7) scale(0.86)">
+    <mask id="gaps" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
+      <rect width="100" height="100" fill="#fff"/>
+      <g stroke="#000" stroke-width="2.2">
+        <path d="M45 50L25 16M45 50L54.5 33M45 50L84 50M45 50L54.5 67M45 50L25 84M45 50L25 50"/>
+      </g>
+    </mask>
+    <g mask="url(#gaps)">
+      <path d="M45 50L25 16L54.5 33Z" fill="#FDA4AF"/>
+      <path d="M45 50L54.5 33L84 50Z" fill="#FB7185"/>
+      <path d="M45 50L84 50L54.5 67Z" fill="#E11D48"/>
+      <path d="M45 50L54.5 67L25 84Z" fill="#BE123C"/>
+      <path d="M45 50L25 84L25 50Z" fill="#881337"/>
+      <path d="M45 50L25 50L25 16Z" fill="#9F1239"/>
+    </g>
+  </g>
+</svg>

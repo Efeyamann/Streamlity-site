@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="{{lang}}" dir="{{dir}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{meta_title}}</title>
+<meta name="description" content="{{meta_description}}">
+<link rel="canonical" href="{{url}}">
+{{alternates}}
+<meta name="theme-color" content="#E8E8E5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Streamlity">
+<meta property="og:title" content="{{meta_title}}">
+<meta property="og:description" content="{{meta_description}}">
+<meta property="og:url" content="{{url}}">
+<meta property="og:image" content="{{og_image}}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="{{og_locale}}">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="{{base}}assets/img/streamlity_icon.svg" type="image/svg+xml">
+<link rel="icon" href="{{base}}favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="{{base}}assets/img/apple-touch-icon.png">
+<link rel="preload" href="{{base}}assets/fonts/inter-bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{base}}assets/fonts/inter-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{base}}assets/styles.css">
+<style>
+@font-face{font-family:Inter;font-weight:400;font-display:swap;src:url({{base}}assets/fonts/inter-regular.woff2) format("woff2")}
+@font-face{font-family:Inter;font-weight:600;font-display:swap;src:url({{base}}assets/fonts/inter-semibold.woff2) format("woff2")}
+@font-face{font-family:Inter;font-weight:700;font-display:swap;src:url({{base}}assets/fonts/inter-bold.woff2) format("woff2")}
+</style>
+{{json_ld}}
+<script defer src="{{base}}assets/main.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">{{skip}}</a>
+
+<svg width="0" height="0" class="sr-only" aria-hidden="true">
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19.5h14"/></symbol>
+  <symbol id="i-github" viewBox="0 0 24 24"><path class="fill" d="M12 2.2a9.8 9.8 0 0 0-3.1 19.1c.5.1.7-.2.7-.5v-1.7c-2.7.6-3.3-1.3-3.3-1.3-.4-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.3-4.5-1.1-4.5-4.9 0-1.1.4-2 1-2.6-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 4.9 0c1.9-1.3 2.7-1 2.7-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.5 1 2.6 0 3.8-2.3 4.6-4.5 4.9.4.3.7.9.7 1.8v2.7c0 .3.2.6.7.5A9.8 9.8 0 0 0 12 2.2z"/></symbol>
+  <symbol id="i-windows" viewBox="0 0 24 24"><path class="fill" d="M3 5.3l7.4-1v7.2H3zm8.4-1.2L21 2.8v8.7h-9.6zM3 12.5h7.4v7.2l-7.4-1zm8.4 0H21v8.7l-9.6-1.3z"/></symbol>
+  <symbol id="i-mac" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="12" rx="1.8"/><path d="M8 20h8M12 16.5V20"/></symbol>
+  <symbol id="i-linux" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M7 9.5l3 2.5-3 2.5M12 15h5"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4 4"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M4 11l8-6.5 8 6.5V20H4z"/></symbol>
+  <symbol id="i-tv" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12.5" rx="2"/><path d="M9 3l3 3 3-3"/></symbol>
+  <symbol id="i-film" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 4v16M16 4v16M4 9h4M4 15h4M16 9h4M16 15h4"/></symbol>
+  <symbol id="i-stack" viewBox="0 0 24 24"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M7 5h10"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></symbol>
+  <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v2.5M12 18.5V21M3 12h2.5M18.5 12H21M5.6 5.6l1.8 1.8M16.6 16.6l1.8 1.8M5.6 18.4l1.8-1.8M16.6 7.4l1.8-1.8"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path class="fill" d="M8 5.5v13l10.5-6.5z"/></symbol>
+  <symbol id="i-volume" viewBox="0 0 24 24"><path d="M4 9.5h3.5L12 6v12l-4.5-3.5H4z"/><path d="M15.5 9a4 4 0 0 1 0 6"/></symbol>
+  <symbol id="i-expand" viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="15" r="4"/><path d="M11 12l8-8M16 7l2.5 2.5"/></symbol>
+  <symbol id="i-eye-off" viewBox="0 0 24 24"><path d="M3 12s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z"/><circle cx="12" cy="12" r="2.5"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="M8.5 7L3.5 12l5 5M15.5 7l5 5-5 5"/></symbol>
+</svg>
+
+<header class="nav-wrap">
+  <nav class="nav" aria-label="{{nav_label}}">
+    <a class="brand" href="{{home}}">
+      <img src="{{base}}assets/img/streamlity_icon.svg" alt="" width="30" height="30">
+      <span>Streamlity</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#features">{{nav_features}}</a></li>
+      <li><a href="#download">{{nav_download}}</a></li>
+      <li><a href="#faq">{{nav_faq}}</a></li>
+      <li><a href="{{repo}}" rel="noopener">GitHub</a></li>
+    </ul>
+    <a class="lang" href="{{other_url}}" hreflang="{{other_lang}}" lang="{{other_lang}}">{{other_lang_name}}</a>
+    <a class="btn btn-ink btn-sm" href="#download" data-os-label>
+      <svg class="ico"><use href="#i-download"/></svg><span>{{nav_cta}}</span>
+    </a>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="hero-tag"><img src="{{base}}assets/img/streamlity_icon.svg" alt="" width="20" height="20">{{hero_tag}}</p>
+      <h1>{{hero_title}}</h1>
+      <p class="hero-sub">{{hero_sub}}</p>
+      <div class="hero-actions">
+        <a class="btn btn-ink btn-lg" href="{{dl_win}}" data-os-download
+           data-win="{{dl_win}}" data-mac="{{dl_mac}}" data-linux="{{dl_deb}}"
+           data-label-none="{{close_cta}}" data-label-win="{{cta_win}}" data-label-mac="{{cta_mac}}" data-label-linux="{{cta_linux}}">
+          <svg class="ico ico-os"><use href="#i-windows"/></svg><span>{{cta_win}}</span>
+        </a>
+        <a class="btn btn-ghost btn-lg" href="{{repo}}" rel="noopener"><svg class="ico"><use href="#i-github"/></svg><span>{{cta_github}}</span></a>
+      </div>
+      <ul class="hero-facts">
+        <li><svg class="ico"><use href="#i-check"/></svg>{{fact_free}}</li>
+        <li><svg class="ico"><use href="#i-check"/></svg>{{fact_platforms}}</li>
+        <li><svg class="ico"><use href="#i-check"/></svg>{{fact_langs}}</li>
+      </ul>
+    </div>
+
+    <div class="stage">
+      <svg class="horizon" viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#5B6B93"/>
+            <stop offset=".45" stop-color="#C79AA8"/>
+            <stop offset=".72" stop-color="#F3C3A1"/>
+            <stop offset="1" stop-color="#F7E2C8"/>
+          </linearGradient>
+          <radialGradient id="glow" cx=".5" cy=".62" r=".35">
+            <stop offset="0" stop-color="#FFF4E0" stop-opacity=".95"/>
+            <stop offset="1" stop-color="#FFF4E0" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="1440" height="760" fill="url(#sky)"/>
+        <rect width="1440" height="760" fill="url(#glow)"/>
+        <circle cx="720" cy="480" r="58" fill="#FFF6E6"/>
+        <path d="M0 470 C180 420 320 455 470 430 S760 380 930 425 S1250 400 1440 440 V760 H0Z" fill="#B98C9B" opacity=".75"/>
+        <path d="M0 540 C220 490 380 530 560 500 S880 470 1060 510 S1300 500 1440 520 V760 H0Z" fill="#8A6A86"/>
+        <path d="M0 620 C260 580 420 610 640 590 S1000 560 1200 600 S1380 600 1440 610 V760 H0Z" fill="#5A4A6A"/>
+        <path d="M0 700 C300 670 520 690 760 676 S1180 660 1440 690 V760 H0Z" fill="#3A3150"/>
+      </svg>
+
+      <div class="app" data-demo="{{demo_json}}" role="group" aria-label="{{demo_label}}">
+        <div class="app-bar">
+          <span class="app-title"><img src="{{base}}assets/img/streamlity_icon.svg" alt="" width="14" height="14">Streamlity</span>
+          <span class="win-ctrl" aria-hidden="true"><i></i><i></i><i></i></span>
+        </div>
+        <div class="app-body">
+          <div class="app-rail" aria-hidden="true">
+            <svg class="ico"><use href="#i-home"/></svg>
+            <svg class="ico on"><use href="#i-tv"/></svg>
+            <svg class="ico"><use href="#i-film"/></svg>
+            <svg class="ico"><use href="#i-stack"/></svg>
+            <svg class="ico"><use href="#i-grid"/></svg>
+            <svg class="ico"><use href="#i-search"/></svg>
+            <svg class="ico rail-end"><use href="#i-gear"/></svg>
+          </div>
+          <div class="app-list">
+            <div class="list-head">
+              <span class="list-title">{{demo_category}}</span>
+              <span class="list-count" data-count></span>
+            </div>
+            <div class="list-items" data-channels role="listbox" aria-label="{{demo_channels}}"></div>
+          </div>
+          <div class="app-player">
+            <div class="screen" data-screen>
+              <svg class="scene" viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                <defs>
+                  <linearGradient id="sceneSky" x1="0" y1="0" x2="0" y2="1">
+                    <stop class="st1" offset="0"/><stop class="st2" offset="1"/>
+                  </linearGradient>
+                </defs>
+                <rect width="640" height="360" fill="url(#sceneSky)"/>
+                <circle class="s-sun" cx="420" cy="150" r="34"/>
+                <g class="s-pan">
+                  <path class="s-h1" d="M-200 210 C-80 180 40 200 160 186 S400 160 520 190 S760 170 840 196 V360 H-200Z"/>
+                  <path class="s-h2" d="M-200 250 C-40 222 120 246 280 230 S560 214 700 240 S820 236 860 246 V360 H-200Z"/>
+                  <path class="s-h3" d="M-200 296 C0 276 200 292 380 282 S700 270 860 290 V360 H-200Z"/>
+                </g>
+              </svg>
+              <span class="badge-live">{{demo_live}}</span>
+              <span class="bug" data-bug></span>
+              <div class="osd">
+                <div class="osd-row">
+                  <div>
+                    <p class="osd-ch" data-osd-ch></p>
+                    <p class="osd-prog" data-osd-prog></p>
+                  </div>
+                  <p class="osd-time" data-osd-time></p>
+                </div>
+                <div class="bar"><i data-osd-bar></i></div>
+                <div class="osd-ctrl" aria-hidden="true">
+                  <svg class="ico"><use href="#i-play"/></svg>
+                  <svg class="ico"><use href="#i-volume"/></svg>
+                  <span class="osd-spacer"></span>
+                  <span class="osd-chip">CC</span>
+                  <svg class="ico"><use href="#i-expand"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="epg">
+              <div class="epg-cell epg-now">
+                <span class="epg-label">{{demo_now}}</span>
+                <span class="epg-title" data-now></span>
+              </div>
+              <div class="epg-cell">
+                <span class="epg-label">{{demo_next}}</span>
+                <span class="epg-title" data-next></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="stage-caption">{{demo_caption}}</p>
+  </section>
+
+  <section class="section" id="features">
+    <div class="section-head">
+      <h2>{{features_title}}</h2>
+      <p>{{features_sub}}</p>
+    </div>
+    <ul class="chips">
+      <li>{{chip_m3u}}</li><li>{{chip_xtream}}</li><li>{{chip_epg}}</li><li>{{chip_catchup}}</li>
+      <li>{{chip_multiview}}</li><li>{{chip_vod}}</li><li>{{chip_resume}}</li><li>{{chip_search}}</li>
+      <li>{{chip_favorites}}</li><li>{{chip_parental}}</li><li>{{chip_tracks}}</li><li>{{chip_vsr}}</li>
+      <li>{{chip_keyboard}}</li><li>{{chip_secure}}</li>
+    </ul>
+
+    <div class="bento">
+      <article class="card card-live">
+        <div class="card-text">
+          <h3>{{card_live_title}}</h3>
+          <p>{{card_live_text}}</p>
+        </div>
+        <div class="mock mock-guide" data-guide aria-hidden="true"></div>
+      </article>
+
+      <article class="card card-multi">
+        <div class="card-text">
+          <h3>{{card_multi_title}}</h3>
+          <p>{{card_multi_text}}</p>
+        </div>
+        <div class="mock mock-multi" aria-hidden="true">
+          <div class="tile t1 on"><span>Meridian Sports</span></div>
+          <div class="tile t2"><span>Northwind News</span></div>
+          <div class="tile t3"><span>Atlas Nature</span></div>
+          <div class="tile t4"><span>Coastline</span></div>
+        </div>
+      </article>
+
+      <article class="card card-vod">
+        <div class="card-text">
+          <h3>{{card_vod_title}}</h3>
+          <p>{{card_vod_text}}</p>
+        </div>
+        <div class="mock mock-posters" aria-hidden="true">
+          <div class="poster p1"><b>Sintel</b><i style="--p:.62"></i></div>
+          <div class="poster p2"><b>Spring</b><i style="--p:.18"></i></div>
+          <div class="poster p3"><b>Tears of Steel</b></div>
+          <div class="poster p4"><b>Cosmos Laundromat</b><i style="--p:.85"></i></div>
+        </div>
+        <p class="mock-note">{{card_vod_note}}</p>
+      </article>
+
+      <article class="card card-search">
+        <div class="card-text">
+          <h3>{{card_search_title}}</h3>
+          <p>{{card_search_text}}</p>
+        </div>
+        <div class="mock mock-search" aria-hidden="true">
+          <div class="search-field"><svg class="ico"><use href="#i-search"/></svg><span>{{search_query}}</span><i class="caret"></i></div>
+          <div class="search-filters"><span class="on">{{search_all}}</span><span>{{search_live}}</span><span>{{search_movies}}</span><span>{{search_series}}</span></div>
+          <ul class="search-results">
+            <li><span class="sw sw1"></span><span>{{search_r1}}</span><em>{{search_live}}</em></li>
+            <li><span class="sw sw2"></span><span>{{search_r2}}</span><em>{{search_live}}</em></li>
+            <li><span class="sw sw3"></span><span>{{search_r3}}</span><em>{{search_series}}</em></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card card-lock">
+        <div class="card-text">
+          <h3>{{card_lock_title}}</h3>
+          <p>{{card_lock_text}}</p>
+        </div>
+        <div class="mock mock-lock" aria-hidden="true">
+          <svg class="ico lock-ico"><use href="#i-lock"/></svg>
+          <div class="pin"><i class="f"></i><i class="f"></i><i class="f"></i><i></i></div>
+          <p>{{lock_prompt}}</p>
+        </div>
+      </article>
+
+      <article class="card card-vsr">
+        <div class="card-text">
+          <h3>{{card_vsr_title}}</h3>
+          <p>{{card_vsr_text}}</p>
+        </div>
+        <div class="mock mock-vsr" data-vsr style="--split:50%">
+          <div class="vsr-img vsr-before" aria-hidden="true"></div>
+          <div class="vsr-img vsr-after" aria-hidden="true"></div>
+          <span class="vsr-tag l" aria-hidden="true">480p</span>
+          <span class="vsr-tag r" aria-hidden="true">1080p VSR</span>
+          <input type="range" min="5" max="95" value="50" aria-label="{{vsr_slider}}">
+        </div>
+      </article>
+
+      <article class="card card-langs">
+        <div class="card-text">
+          <h3>{{card_langs_title}}</h3>
+          <p>{{card_langs_text}}</p>
+        </div>
+        <ul class="mock mock-langs">
+          <li lang="en">English</li><li lang="tr">Türkçe</li><li lang="zh">中文</li><li lang="hi">हिन्दी</li>
+          <li lang="es">Español</li><li lang="ar" dir="rtl">العربية</li><li lang="fr">Français</li><li lang="bn">বাংলা</li>
+          <li lang="pt">Português</li><li lang="ru">Русский</li><li lang="id">Indonesia</li><li lang="de">Deutsch</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="download">
+    <div class="section-head">
+      <h2>{{dl_title}}</h2>
+      <p>{{dl_sub}}</p>
+    </div>
+    <div class="platforms">
+      <article class="platform" data-platform="win">
+        <svg class="ico ico-xl"><use href="#i-windows"/></svg>
+        <h3>Windows</h3>
+        <p class="req">{{dl_win_req}}</p>
+        <a class="btn btn-ink" href="{{dl_win}}"><svg class="ico"><use href="#i-download"/></svg><span>{{dl_win_btn}}</span></a>
+        <a class="btn btn-ghost" href="{{store_url}}" {{store_hidden}} rel="noopener"><span>Microsoft Store</span></a>
+        <p class="alt"><a href="{{dl_win_zip}}">{{dl_win_zip_label}}</a></p>
+        <p class="note">{{dl_win_note}}</p>
+      </article>
+      <article class="platform" data-platform="mac">
+        <svg class="ico ico-xl"><use href="#i-mac"/></svg>
+        <h3>macOS</h3>
+        <p class="req">{{dl_mac_req}}</p>
+        <a class="btn btn-ink" href="{{dl_mac}}"><svg class="ico"><use href="#i-download"/></svg><span>{{dl_mac_btn}}</span></a>
+        <p class="note">{{dl_mac_note}}</p>
+      </article>
+      <article class="platform" data-platform="linux">
+        <svg class="ico ico-xl"><use href="#i-linux"/></svg>
+        <h3>Linux</h3>
+        <p class="req">{{dl_linux_req}}</p>
+        <a class="btn btn-ink" href="{{dl_deb}}"><svg class="ico"><use href="#i-download"/></svg><span>{{dl_deb_btn}}</span></a>
+        <p class="alt"><a href="{{dl_tar}}">{{dl_tar_label}}</a></p>
+        <p class="note">{{dl_linux_note}}</p>
+      </article>
+    </div>
+    <p class="dl-foot">{{dl_version}} <a href="{{releases}}" rel="noopener">{{dl_all}}</a></p>
+  </section>
+
+  <section class="section section-trust">
+    <div class="section-head">
+      <h2>{{trust_title}}</h2>
+      <p>{{trust_sub}}</p>
+    </div>
+    <ul class="trust">
+      <li><svg class="ico"><use href="#i-eye-off"/></svg><h3>{{trust_1_title}}</h3><p>{{trust_1_text}}</p></li>
+      <li><svg class="ico"><use href="#i-key"/></svg><h3>{{trust_2_title}}</h3><p>{{trust_2_text}}</p></li>
+      <li><svg class="ico"><use href="#i-code"/></svg><h3>{{trust_3_title}}</h3><p>{{trust_3_text}}</p></li>
+    </ul>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="section-head">
+      <h2>{{faq_title}}</h2>
+    </div>
+    <div class="faq">
+{{faq_html}}
+    </div>
+  </section>
+
+  <section class="closing">
+    <img src="{{base}}assets/img/streamlity_icon.svg" alt="" width="88" height="88">
+    <h2>{{close_title}}</h2>
+    <p>{{close_sub}}</p>
+    <a class="btn btn-ink btn-lg" href="#download"><svg class="ico"><use href="#i-download"/></svg><span>{{close_cta}}</span></a>
+  </section>
+</main>
+
+<footer class="footer">
+  <p class="disclaimer">{{disclaimer}}</p>
+  <div class="footer-row">
+    <span>© {{year}} Streamlity. {{footer_license}}</span>
+    <nav aria-label="{{footer_label}}">
+      <a href="{{repo}}" rel="noopener">GitHub</a>
+      <a href="{{releases}}" rel="noopener">{{footer_releases}}</a>
+      <a href="{{repo}}/issues" rel="noopener">{{footer_issues}}</a>
+      <a href="{{other_url}}" hreflang="{{other_lang}}" lang="{{other_lang}}">{{other_lang_name}}</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
