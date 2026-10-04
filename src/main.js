@@ -34,6 +34,28 @@
     if (mine) mine.classList.add("is-mine");
   }
 
+  // ---- Brand: smooth scroll back to the top on the same page -----------
+  document.querySelectorAll("[data-top]").forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      if (location.hash) history.replaceState(null, "", location.pathname + location.search);
+    });
+  });
+
+  // ---- Copy buttons -----------------------------------------------------
+  document.querySelectorAll("[data-copy]").forEach(function (b) {
+    var label = b.textContent;
+    b.addEventListener("click", function () {
+      if (!navigator.clipboard) return;
+      navigator.clipboard.writeText(b.dataset.copy).then(function () {
+        b.textContent = b.dataset.done;
+        setTimeout(function () { b.textContent = label; }, 1600);
+      });
+    });
+  });
+
   // ---- Demo schedule ----------------------------------------------------
   var app = document.querySelector(".app[data-demo]");
   if (!app) return;

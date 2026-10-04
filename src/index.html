@@ -61,7 +61,7 @@
 
 <header class="nav-wrap">
   <nav class="nav" aria-label="{{nav_label}}">
-    <a class="brand" href="{{home}}">
+    <a class="brand" href="{{home}}" data-top>
       <img src="{{base}}assets/img/streamlity_icon.svg" alt="" width="30" height="30">
       <span>Streamlity</span>
     </a>
@@ -69,7 +69,7 @@
       <li><a href="#features">{{nav_features}}</a></li>
       <li><a href="#download">{{nav_download}}</a></li>
       <li><a href="#faq">{{nav_faq}}</a></li>
-      <li><a href="{{repo}}" rel="noopener">GitHub</a></li>
+      <li><a href="{{repo}}" target="_blank" rel="noopener">GitHub</a></li>
     </ul>
     <a class="lang" href="{{other_url}}" hreflang="{{other_lang}}" lang="{{other_lang}}">{{other_lang_name}}</a>
     <a class="btn btn-ink btn-sm" href="#download" data-os-label>
@@ -90,7 +90,7 @@
            data-label-none="{{close_cta}}" data-label-win="{{cta_win}}" data-label-mac="{{cta_mac}}" data-label-linux="{{cta_linux}}">
           <svg class="ico ico-os"><use href="#i-windows"/></svg><span>{{cta_win}}</span>
         </a>
-        <a class="btn btn-ghost btn-lg" href="{{repo}}" rel="noopener"><svg class="ico"><use href="#i-github"/></svg><span>{{cta_github}}</span></a>
+        <a class="btn btn-ghost btn-lg" href="{{repo}}" target="_blank" rel="noopener"><svg class="ico"><use href="#i-github"/></svg><span>{{cta_github}}</span></a>
       </div>
       <ul class="hero-facts">
         <li><svg class="ico"><use href="#i-check"/></svg>{{fact_free}}</li>
@@ -314,6 +314,13 @@
         <a class="btn btn-ink" href="{{dl_win}}"><svg class="ico"><use href="#i-download"/></svg><span>{{dl_win_btn}}</span></a>
         <a class="btn btn-ghost" href="{{store_url}}" {{store_hidden}} rel="noopener"><span>Microsoft Store</span></a>
         <p class="alt"><a href="{{dl_win_zip}}">{{dl_win_zip_label}}</a></p>
+        <div class="cmd">
+          <span class="cmd-label">{{dl_winget_label}}</span>
+          <div class="cmd-box">
+            <code>winget install Efeyamann.Streamlity</code>
+            <button type="button" class="cmd-copy" data-copy="winget install Efeyamann.Streamlity" data-done="{{copied}}">{{copy}}</button>
+          </div>
+        </div>
         <p class="note">{{dl_win_note}}</p>
       </article>
       <article class="platform" data-platform="mac">
@@ -332,7 +339,7 @@
         <p class="note">{{dl_linux_note}}</p>
       </article>
     </div>
-    <p class="dl-foot">{{dl_version}} <a href="{{releases}}" rel="noopener">{{dl_all}}</a></p>
+    <p class="dl-foot">{{dl_version}} <a href="{{releases}}" target="_blank" rel="noopener">{{dl_all}}</a></p>
   </section>
 
   <section class="section section-trust">
@@ -369,9 +376,9 @@
   <div class="footer-row">
     <span>© {{year}} Streamlity. {{footer_license}}</span>
     <nav aria-label="{{footer_label}}">
-      <a href="{{repo}}" rel="noopener">GitHub</a>
-      <a href="{{releases}}" rel="noopener">{{footer_releases}}</a>
-      <a href="{{repo}}/issues" rel="noopener">{{footer_issues}}</a>
+      <a href="{{repo}}" target="_blank" rel="noopener">GitHub</a>
+      <a href="{{releases}}" target="_blank" rel="noopener">{{footer_releases}}</a>
+      <a href="{{repo}}/issues" target="_blank" rel="noopener">{{footer_issues}}</a>
       <a href="{{other_url}}" hreflang="{{other_lang}}" lang="{{other_lang}}">{{other_lang_name}}</a>
     </nav>
   </div>

@@ -377,6 +377,15 @@ symbol .fill { fill: currentColor; stroke: none; }
 .platform .alt { font-size: 14.5px; margin-top: 4px; }
 .platform .alt a { color: var(--ink); text-underline-offset: 3px; text-decoration-color: var(--line); }
 .platform .alt a:hover { text-decoration-color: currentColor; }
+.cmd { width: 100%; margin-top: 10px; }
+.cmd-label { display: block; font-size: 13.5px; color: var(--muted); margin-bottom: 6px; }
+.cmd-box { display: flex; align-items: center; gap: 8px; padding: 6px 6px 6px 12px; border-radius: 12px; background: var(--paper); border: 1px solid var(--line); }
+.cmd-box code { flex: 1; min-width: 0; font: 500 13px/1.4 ui-monospace, "Cascadia Mono", Consolas, monospace; color: var(--ink); overflow-x: auto; white-space: nowrap; scrollbar-width: none; }
+.cmd-copy { flex: none; font: 600 12.5px/1 Inter, system-ui, sans-serif; padding: 7px 10px; border-radius: 8px; border: 0; background: var(--ink); color: var(--on-ink); cursor: pointer; }
+.platform.is-mine .cmd-label { color: color-mix(in srgb, var(--on-ink) 66%, var(--ink)); }
+.platform.is-mine .cmd-box { background: color-mix(in srgb, var(--on-ink) 10%, var(--ink)); border-color: color-mix(in srgb, var(--on-ink) 18%, transparent); }
+.platform.is-mine .cmd-box code { color: var(--on-ink); }
+.platform.is-mine .cmd-copy { background: var(--on-ink); color: var(--ink); }
 .platform .note { margin-top: auto; padding-top: 16px; font-size: 13.5px; line-height: 1.5; color: var(--muted); }
 .platform.is-mine { background: var(--ink); color: var(--on-ink); border-color: var(--ink); }
 .platform.is-mine h3, .platform.is-mine .ico-xl, .platform.is-mine .alt a { color: var(--on-ink); }
