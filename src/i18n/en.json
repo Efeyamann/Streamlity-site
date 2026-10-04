@@ -24,12 +24,14 @@
   "demo_label": "Interactive preview of the Streamlity live TV screen. Pick a channel from the list.",
   "demo_category": "Featured",
   "demo_channels": "Channels",
+  "demo_nav": "App sections",
   "demo_live": "Live",
   "demo_now": "Now",
   "demo_next": "Next",
   "demo_caption": "Try it: pick a channel. Every name here is made up, and Streamlity comes with no channels of its own.",
   "demo": {
     "count": "{n} channels",
+    "ui": {"nav": {"home": "Home", "live": "Live TV", "guide": "Guide", "movies": "Movies", "series": "Series", "multiview": "Multiview", "search": "Search", "settings": "Settings"}, "greeting": ["Good night", "Good morning", "Good afternoon", "Good evening"], "homeIntro": "Pick up where you left off or discover something new.", "continueWatching": "Continue watching", "recentChannels": "Recently watched channels", "favoritePackages": "Favorite packages", "minLeft": "{n} min left", "nChannels": "{n} channels", "nTitles": "{n} movies", "nSeries": "{n} series", "nowOn": "What’s on now", "cats": {"all": "All", "action": "Action", "comedy": "Comedy", "fantasy": "Fantasy", "scifi": "Sci-fi", "drama": "Drama", "kids": "Kids", "docs": "Documentary"}, "packages": {"news": "News", "sports": "Sports", "kids": "Kids", "docs": "Documentary"}, "play": "Play", "resume": "Resume", "back": "Back", "minutes": "{n} min", "season": "Season {n}", "episode": "Episode {n}", "seasons": "{n} seasons", "oneSeason": "1 season", "openMovie": "An open movie from Blender Studio, shown here as an example of your provider’s library.", "madeUp": "A made-up series, shown here as an example of your provider’s library.", "multiviewHint": "Click a tile to hear that channel.", "searchHint": "Search channels, movies or series", "noResults": "Nothing found for “{q}”. Try another word.", "searchEmpty": "Start typing to search everything at once.", "lists": "Lists", "listName": "Home", "listDetail": "M3U playlist, 6 channels, guide updated today", "playback": "Playback", "vsr": "RTX Video Super Resolution", "vsrDetail": "Upscales lower-resolution streams on NVIDIA RTX graphics cards.", "parental": "Parental control", "parentalDetail": "Ask for the PIN before opening locked categories.", "language": "Language", "languageDetail": "The app’s interface language", "langValue": "English", "guideNow": "Now"},
     "channels": [
       {"name": "Northwind News", "bug": "NWN", "programs": ["Headlines", "World Desk", "Market Watch", "The Briefing"]},
       {"name": "Meridian Sports", "bug": "MSP", "programs": ["Matchday Live", "Extra Time", "Highlights", "Track & Field"]},

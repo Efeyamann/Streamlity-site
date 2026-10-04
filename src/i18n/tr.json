@@ -24,12 +24,14 @@
   "demo_label": "Streamlity canlı TV ekranının etkileşimli önizlemesi. Listeden bir kanal seçin.",
   "demo_category": "Öne çıkanlar",
   "demo_channels": "Kanallar",
+  "demo_nav": "Uygulama bölümleri",
   "demo_live": "Canlı",
   "demo_now": "Şimdi",
   "demo_next": "Sonra",
   "demo_caption": "Deneyin: bir kanal seçin. Buradaki tüm adlar uydurmadır; Streamlity kendi kanallarıyla gelmez.",
   "demo": {
     "count": "{n} kanal",
+    "ui": {"nav": {"home": "Ana sayfa", "live": "Canlı TV", "guide": "Rehber", "movies": "Filmler", "series": "Diziler", "multiview": "Çoklu ekran", "search": "Ara", "settings": "Ayarlar"}, "greeting": ["İyi geceler", "Günaydın", "İyi günler", "İyi akşamlar"], "homeIntro": "Kaldığın yerden devam et ya da yeni bir şey keşfet.", "continueWatching": "İzlemeye devam et", "recentChannels": "Son izlenen kanallar", "favoritePackages": "Favori paketler", "minLeft": "{n} dk kaldı", "nChannels": "{n} kanal", "nTitles": "{n} film", "nSeries": "{n} dizi", "nowOn": "Şu an yayında", "cats": {"all": "Tümü", "action": "Aksiyon", "comedy": "Komedi", "fantasy": "Fantastik", "scifi": "Bilim kurgu", "drama": "Dram", "kids": "Çocuk", "docs": "Belgesel"}, "packages": {"news": "Haber", "sports": "Spor", "kids": "Çocuk", "docs": "Belgesel"}, "play": "Oynat", "resume": "Devam et", "back": "Geri", "minutes": "{n} dk", "season": "{n}. sezon", "episode": "{n}. bölüm", "seasons": "{n} sezon", "oneSeason": "1 sezon", "openMovie": "Blender Studio’nun açık filmlerinden biri; sağlayıcınızın arşivine örnek olarak gösteriliyor.", "madeUp": "Uydurma bir dizi; sağlayıcınızın arşivine örnek olarak gösteriliyor.", "multiviewHint": "Sesini duymak istediğiniz karoya tıklayın.", "searchHint": "Kanal, film ya da dizi ara", "noResults": "“{q}” için sonuç yok. Başka bir kelime deneyin.", "searchEmpty": "Her şeyde aynı anda aramak için yazmaya başlayın.", "lists": "Listeler", "listName": "Ev", "listDetail": "M3U listesi, 6 kanal, rehber bugün güncellendi", "playback": "Oynatma", "vsr": "RTX Video Super Resolution", "vsrDetail": "NVIDIA RTX ekran kartlarında düşük çözünürlüklü yayınları büyütür.", "parental": "Ebeveyn denetimi", "parentalDetail": "Kilitli kategorileri açmadan önce PIN sor.", "language": "Dil", "languageDetail": "Uygulamanın arayüz dili", "langValue": "Türkçe", "guideNow": "Şimdi"},
     "channels": [
       {"name": "Northwind News", "bug": "NWN", "programs": ["Manşetler", "Dünya Masası", "Piyasa Gündemi", "Gün Özeti"]},
       {"name": "Meridian Sports", "bug": "MSP", "programs": ["Maç Günü Canlı", "Uzatmalar", "Özetler", "Atletizm"]},
