@@ -25,7 +25,7 @@ BASE = "/Streamlity-site/"
 LANGS = ["en", "tr"]  # first one is the default (site root, x-default)
 
 REPO = "https://github.com/Efeyamann/Streamlity"
-VERSION = "0.1.0"  # latest version published on GitHub Releases
+VERSION = "0.1.2"  # latest version published on GitHub Releases
 STORE_URL = ""  # Microsoft Store page, once the listing is live
 
 
